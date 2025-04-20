@@ -7,6 +7,8 @@ from sklearn.metrics import accuracy_score
 import streamlit as st
 from PIL import Image
 
+classifier = joblib.load('svm_model.pkl')
+
 # Load the new dataset
 df = pd.read_csv('diabetes_prediction_dataset.csv')
 
