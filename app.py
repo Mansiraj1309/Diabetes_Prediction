@@ -36,8 +36,8 @@ def app():
     # Load and display image
     try:
         img = Image.open("img.jpeg")
-        img = img.resize((200, 200))
-        st.image(img, caption="Diabetes Image", width=200)
+        img = img.resize((300, 200))
+        st.image(img, caption="Diabetes Image", width=300)
     except FileNotFoundError:
         st.warning("Warning: 'img.jpeg' not found. Skipping image display.")
 
